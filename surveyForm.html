@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/css/survey.css">
+</head>
+
+<body>
+    <h1>Survey</h1>
+    <form class ="survey-form" action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+        <fieldset>
+            <legend>Your information</legend>
+            <div>First Name: <input type="text" name="firstName" placeholder="Your First Name"></div>
+            <div>Last Name: <input type="text" name="lastName" placerholder="Your Last Name"></div>
+            <div>Your Email: <input type="email" name="eail" placerholder="Your Email Adress"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Survey Questions</legend>
+            <div>Favorite Sport:
+                 <input type="radio" name="sport" value="baseball">Baseball
+                 <input type="radio" name="sport" value="rugby">Rugby
+                 <input type="radio" name="sport" value="snowboarding">Snowboarding
+            </div>
+            <div>
+                Your Pets: 
+                <input type="checkbox" name="pets" value="cat">Cat
+                <input type="checkbox" name="pets" value="dog">Dog
+                <input type="checkbox" name="pets" value="iguna">Iguna
+            </div>
+
+        </fieldset>
+        <input type="submit" id="submit-btn">
+    </form>
+    
+    
+</body>
+</html>
